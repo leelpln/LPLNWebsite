@@ -62,9 +62,16 @@
             /* make the icon itself bigger */
         }
         .hero-img {
-            max-width: 300px; /* adjust to taste */
+            width: 100%;
+            max-width: 400px;   /* desktop / tablet size */
             height: auto;
             border-radius: 1rem;
+        }
+
+        @media (max-width: 576px) {
+            .hero-img {
+                max-width: 100%; /* on phones, use full container width */
+            }
         }
          .logo-img {
             border-radius: 0.5rem; /* use 50% for a circle */
